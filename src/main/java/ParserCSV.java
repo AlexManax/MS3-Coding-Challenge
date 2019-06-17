@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
-
 public class ParserCSV {
+    public static void main(String[] args) {
+
+    }
 }
