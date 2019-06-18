@@ -4,7 +4,7 @@ MS3 Coding Challenge
 Open as maven project
 
 pom.xml:
-opencsv library added
+opencsv library added,
 sqlite-jdbc driver added
 
 
