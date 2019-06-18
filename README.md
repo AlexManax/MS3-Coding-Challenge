@@ -20,4 +20,4 @@ Assumptions:
 5. We will have 2 input parameters:
     a. path to source of CSV file and
     b. path to output directory that will contain a log file and the bad-data-<timestamp>.csv file
-6. The program will not start in parallel mode so each bad-data-<timestamp>.csv file will be unique.
+6. The program will not start in parallel mode so each bad-data-<*>.csv file will be unique.
