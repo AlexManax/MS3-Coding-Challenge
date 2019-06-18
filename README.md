@@ -7,6 +7,7 @@ pom.xml:
 opencsv library added
 sqlite-jdbc driver added
 
+
 Assumptions:
 
 1. We always have 10 columns for correct CSV record (line)
