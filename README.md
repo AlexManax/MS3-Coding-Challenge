@@ -1,15 +1,16 @@
 # MS3-Coding-Challenge
 MS3 Coding Challenge
 
-Open as maven project
+Please open as maven project
+
 
 pom.xml:
 opencsv library added,
 sqlite-jdbc driver added
 
+SQLite config: direct write, journaling in memory - increased INSERT command productivity by ~900% (4000ms => 500ms) vs default config.
 
 Assumptions:
-
 1. We always have 10 columns for correct CSV record (line)
 2. 1st CSV record contain columns names
 3. CSV record "A,,C,D,E,F,G,H,I,J" contains 10 columns even if its body may be empty
