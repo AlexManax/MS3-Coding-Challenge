@@ -20,3 +20,11 @@ Assumptions:
 
 4. We will have 2 input parameters: a. path to the source of CSV file and b. path to output directory that will contain a log file and the bad-data-.csv file
 5. The program will not start in a parallel mode so each bad-data-<*>.csv file will be unique.
+
+Detected extra columns:
+"HELLOWORLD HAS NOTHING ON ME"
+"If you found me Keep up the good work!"
+"evilrow"
+"extracolumns"
+"ImExtra!!!"
+=)
