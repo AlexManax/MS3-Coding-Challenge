@@ -9,7 +9,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ParserCSV {
-    public static void main(String[] args) { //args receiving 2 params: path to CSV file and path to output directory
+    public static void main(String[] args) { //args may receive 2 params: path to CSV file and path to output directory
+        switch (args.length) {
+            case 2: //if program received 2 params
+                parceCSV(args);
+                break;
+            case 1: //if program received 1 params (path to source)
+                String[] arg = {args[0], "output"};
+                parceCSV(arg);
+                break;
+            case 0: //if no param received
+                String[] arg2 = {"ms3Interview.csv", "output"};
+                parceCSV(arg2);
+                break;
+        }
+    }
+
+    private static void parceCSV(String[] args) {
         Date start = new Date();//Used for time test
         DBservice dBservice = new DBservice();//Used for access to DB methods
         int countGoodRecords = 0;
@@ -54,8 +70,8 @@ public class ParserCSV {
 
     private static void writeLog(String arg, int countGood, int countBad) {
         String logFilePath = arg + "/log.log";
-        String log = countGood + countBad + " records received\n" + countGood + " records successful\n"
-                        + countBad + " records failed\n ****************************************\n";
+        String log = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()) + "\n\n" + countGood + countBad + " records received\n" + countGood + " records successful\n"
+                + countBad + " records failed\n ****************************************\n";
         try {
             if (Files.exists(Paths.get(logFilePath))) {
                 Files.write(Paths.get(logFilePath), log.getBytes(), StandardOpenOption.APPEND); //append if file exist
