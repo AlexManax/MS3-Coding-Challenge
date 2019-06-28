@@ -30,7 +30,11 @@ Detected extra columns:
 =)
 
 update 06/28
-      added check for input parameters
-      slight methods refactoring
-			removed not necessary functionality in connect method
-			added check for established connection in insert method
+
+added check for input parameters
+      
+slight methods refactoring
+      
+removed not necessary functionality in connect method
+			
+added check for established connection in insert method
