@@ -28,3 +28,7 @@ Detected extra columns:
 "extracolumns"
 "ImExtra!!!"
 =)
+
+update 06/28
+added check for input parameters
+slight methods refactoring
